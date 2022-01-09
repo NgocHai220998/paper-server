@@ -10,7 +10,7 @@ class PapersController < ApplicationController
 
   # GET /papers/1
   def show
-    render json: @paper
+    render json: { paper: @paper, group: @paper.group }
   end
 
   # POST /papers
